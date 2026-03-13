@@ -1,6 +1,7 @@
 from django.urls import path
-from log.views import LogEventView
+from log.views import LogEventView, ProgramLogEventView
 
 urlpatterns = [
-    path('log', LogEventView.as_view()),
+    path('log/device', DeviceLogEventView.as_view()),
+    path('log/program', ProgramLogEventView.as_view()),
 ]
