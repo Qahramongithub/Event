@@ -1,5 +1,5 @@
 from django.urls import path
-from log.views import LogEventView, ProgramLogEventView
+from log.views import DeviceLogEventView, ProgramLogEventView
 
 urlpatterns = [
     path('log/device', DeviceLogEventView.as_view()),
